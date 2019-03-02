@@ -1,8 +1,8 @@
 function toggleNav() {
-    if ($("#side-bar").css("width") === "250px") {
-        $("#side-bar").css("width", "0px");
+    if ($(".sidenav").css("width") > "0px") {
+        $(".sidenav").css("width", "0em");
     } else {
-        $("#side-bar").css("width", "250px");
+        $(".sidenav").css("width", "15.625em");
     }
 }
 
@@ -14,9 +14,9 @@ function setMargin() {
 }
 
 $(document).mouseup(function (e) {
-    var el = $("#side-bar");
+    var el = $(".sidenav");
 
     if (!el.is(e.target) && el.has(e.target).length === 0) {
-        el.css("width", "0px");
+        el.css("width", "0em");
     }
 });
