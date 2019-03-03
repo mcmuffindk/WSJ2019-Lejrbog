@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Segoe UI";
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 .icon-bar {
 	position: fixed;
