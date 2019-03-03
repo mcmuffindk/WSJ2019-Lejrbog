@@ -1,5 +1,5 @@
 #main {
-	margin: 0em 1em;
+	margin: 0em 1em 1.5em 1em;
 	overflow-y: auto;
 }
 
@@ -13,10 +13,6 @@
 
 #dds {
 	margin-top: 3em !important;
-}
-
-#g {
-	margin-bottom: 1.5em !important;
 }
 
 .bold {
