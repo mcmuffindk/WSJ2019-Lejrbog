@@ -6,11 +6,12 @@ function toggleNav() {
 	}
 }
 
-$(setTimeout(setMargin, 100));
+$(setTimeout(setMargin, 10));
 
 function setMargin() {
 	var margin = $('.icon-bar').css('height');
 	$('.sidenav').css('margin-top', margin);
+	$('#main').css('margin-top', margin);
 }
 
 $(document).mouseup(function (e) {
