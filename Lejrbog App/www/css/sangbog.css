@@ -1,0 +1,18 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+#main a {
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+
+#main p {
+	text-align: center;
+}
