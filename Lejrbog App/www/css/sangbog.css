@@ -16,3 +16,20 @@
 #main p {
 	text-align: center;
 }
+
+.first {
+	margin-top: 3em !important;
+}
+
+.line {
+	margin-top: 0.25em;
+	margin-bottom: 0em;
+}
+
+.vers {
+	margin-top: 3em;
+}
+
+.italic {
+	font-style: italic;
+}
