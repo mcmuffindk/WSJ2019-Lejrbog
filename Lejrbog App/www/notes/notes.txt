@@ -18,3 +18,14 @@ Spørg gruppe evt
 
 ### DESIGN ###
 Spørg gruppe og nogen evt kan designe
+
+-Colors
+
+Orange baggrund:	#f37236
+Brun menu:			#ab774f
+Sort:				#000000
+Beige:				#f5cba2
+Gul:				#f6d22a
+Grøn:				#8ac97c
+Mørk pink:			#dd6b77
+Rød:				#ee4538
