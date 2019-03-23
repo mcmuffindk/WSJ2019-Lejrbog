@@ -10,8 +10,8 @@ $(setTimeout(setMargin, 10));
 
 function setMargin() {
 	var margin = $('.icon-bar').css('height');
-	$('.sidenav').css('margin-top', margin);
-	$('#main').css('margin-top', margin);
+	$('.sidenav').css('margin-bottom', margin);
+	$('#main').css('margin-bottom', margin);
 }
 
 $(document).mouseup(function (e) {
