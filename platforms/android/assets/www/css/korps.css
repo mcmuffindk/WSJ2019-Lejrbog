@@ -1,0 +1,29 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+#main p {
+	margin-bottom: 0em;
+}
+
+#dds {
+	margin-top: 3em !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.lov {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+.korps {
+	margin-top: 6em;
+}

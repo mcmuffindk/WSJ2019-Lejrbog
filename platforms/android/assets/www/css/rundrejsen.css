@@ -1,0 +1,12 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+.point {
+	margin: 0em;
+}
