@@ -12,6 +12,7 @@ function setMargin() {
 	var margin = $('.icon-bar').css('height');
 	$('.sidenav').css('margin-bottom', margin);
 	$('#main').css('margin-bottom', margin);
+	$('#nav').load('navigation.html');
 }
 
 $(document).mouseup(function (e) {

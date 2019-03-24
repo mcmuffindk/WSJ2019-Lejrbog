@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	background-color: #f5cba2;
 }
 .icon-bar {
 	position: fixed;
 	bottom: 0em;
     width: 100%;
 	z-index: 2;
-    background-color: #555;
+    background-color: #ab774f;
     overflow: auto;
 }
 .icon-bar a {
@@ -20,7 +21,7 @@ body {
     font-size: 2.25em;
 }
 .active {
-    background-color: #4CAF50;
+    background-color: #f37236;
 }
 .sidenav {
     height: 100%;
@@ -29,7 +30,7 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #ab774f;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -37,7 +38,7 @@ body {
     padding: 0.16em 0.32em 0.16em 1.28em;
     text-decoration: none;
     font-size: 1.5em/*1.5625em*/;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
