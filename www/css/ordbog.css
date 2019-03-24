@@ -1,0 +1,34 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+p {
+  display: flex;
+}
+p > span {
+  width: 100%;
+}
+
+p > span:first-child {
+ text-align:right;
+}
+
+.centered {
+  margin:0.25em 0.5em 0em;
+}
+
+h3 {
+  display: flex;
+}
+h3 > span {
+  width: 100%;
+}
+
+h3 > span:first-child {
+ text-align:right;
+}
