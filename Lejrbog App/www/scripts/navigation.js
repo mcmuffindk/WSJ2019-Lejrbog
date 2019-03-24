@@ -13,6 +13,7 @@ function setMargin() {
 	$('.sidenav').css('margin-bottom', margin);
 	$('#main').css('margin-bottom', margin);
 	$('#nav').load('navigation.html');
+	$('#navs').load('../navigations.html');
 }
 
 $(document).mouseup(function (e) {
