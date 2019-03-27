@@ -27,3 +27,9 @@
 .korps {
 	margin-top: 6em;
 }
+
+.input {
+    border: 1px;
+    outline-style: solid;
+    outline-color: #ab774f;
+}
