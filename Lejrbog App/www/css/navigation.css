@@ -29,7 +29,7 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #ab774f;
     overflow-x: hidden;
     transition: 0.5s;
@@ -44,4 +44,8 @@ body {
 }
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+#lastmenu {
+	
 }
