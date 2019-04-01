@@ -6,14 +6,19 @@ function toggleNav() {
 	}
 }
 
-$(setTimeout(setMargin, 10));
+$(setTimeout(load, 10));
+$(setTimeout(setMargin, 100));
+
+function load() {
+	$('#nav').load('navigation.html');
+	$('#navs').load('../navigations.html');
+}
 
 function setMargin() {
 	var margin = $('.icon-bar').css('height');
 	$('.sidenav').css('margin-bottom', margin);
+	$('#lastmenu').css('margin-bottom', margin);
 	$('#main').css('margin-bottom', margin);
-	$('#nav').load('navigation.html');
-	$('#navs').load('../navigations.html');
 }
 
 $(document).mouseup(function (e) {
