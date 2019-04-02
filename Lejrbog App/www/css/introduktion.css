@@ -1,0 +1,32 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+#main p {
+	text-align: center;
+}
+
+#main .collapsible {
+	background-color: #f5cba2;
+	color: #333;
+	cursor: pointer;
+	padding: 1.2em;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#main .content {
+	padding: 0em 1.2em;
+	display: none;
+	overflow: hidden;
+	background-color: #f5cba2;
+}
