@@ -8,11 +8,11 @@
 }
 
 #main p {
-	margin-bottom: 0em;
+	text-align: left;
 }
 
-#dds {
-	margin-top: 3em !important;
+.center {
+	text-align: center !important;
 }
 
 .unit {
@@ -20,6 +20,11 @@
 }
 
 .input {
+	margin-top: inherit;
+	margin-bottom: 1.5em;
+	margin-left: inherit;
+	margin-right: inherit;
+	float: left;
     border: 0.2em;
     border-style: solid;
     border-color: #ab774f;
