@@ -15,21 +15,18 @@
 	margin-top: 3em !important;
 }
 
-.bold {
-	font-weight: bold;
-}
-
-.lov {
-	margin-top: 0em;
-	margin-bottom: 0em;
-}
-
-.korps {
-	margin-top: 6em;
+.unit {
+	margin: auto;
 }
 
 .input {
-    border: 1px;
-    outline-style: solid;
-    outline-color: #ab774f;
+    border: 0.2em;
+    border-style: solid;
+    border-color: #ab774f;
+	outline: none !important;
+}
+
+hr {
+	border-style: solid;
+	border-color: #AB774F;
 }
