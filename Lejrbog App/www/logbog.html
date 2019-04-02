@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="css/navigation.css">
     <link type="text/css" rel="stylesheet" href="css/all.min.css">
+	<link type="text/css" rel="stylesheet" href="css/logbog.css">
     <!-- JS -->
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/navigation.js"></script>
@@ -21,11 +22,16 @@
 		<div id="nav">
 			<!-- NAVIGATION -->
 		</div>
-		
+
 		<div id="main">
-			<div id="dag0">
-				<h1> Dag 1</h1>
-				<select id="score" oninput="saveScore()">
+			<h1>Logbog</h1>
+			<p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<div id="dag0" class="dag">
+				<h3>Dag 1</h3>
+				
+				<!-- SKAL VI HAVE DET HER MED?? -->
+				
+				<!-- <select id="score" onChange="saveScore()">
 					<option>1</option>
 					<option>2</option>
 					<option>3</option>
@@ -36,8 +42,8 @@
 					<option>8</option>
 					<option>9</option>
 					<option>10</option>
-				</select>
-				<textarea id="reflektion" type="text" style="width: 100%; height: 6em; line" oninput="saveReflection()"></textarea>
+				</select> -->
+				<textarea id="reflektion" type="text" onKeyUp="saveReflection()"></textarea>
 			</div>
 		</div>
 		

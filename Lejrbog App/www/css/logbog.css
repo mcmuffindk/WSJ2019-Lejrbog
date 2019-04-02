@@ -1,0 +1,21 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+textarea {
+	width: 90%;
+	height: 6em;
+	border: 0.2em;
+    border-style: solid;
+    border-color: #ab774f;
+	outline: none !important;
+}
+
+.center {
+	text-align: center;
+}
