@@ -39,7 +39,7 @@ function convert(inputEle) {
 		if (input == "") {
 			document.getElementById("tip").innerHTML = "";
 		} else {
-			document.getElementById("tip").innerHTML = "Det vil være god stil at betale mellem " + ((input * 0.1).toFixed(2)).replace(".", ",") + "$ og " + ((input * 0.15).toFixed(2)).replace(".", ",") + "$ i drikke penge. Hvis i er på restaurent, vil det derimod være " + ((input * 0.25).toFixed(2)).replace(".", ",") + "$ i drikkepenge.";
+			document.getElementById("tip").innerHTML = "Det vil være god stil at betale mellem <span class=\"bold\">" + ((input * 0.1).toFixed(2)).replace(".", ",") + "$</span> og <span class=\"bold\">" + ((input * 0.15).toFixed(2)).replace(".", ",") + "$</span> i drikkepenge. Hvis i er på restaurent, vil det derimod være <span class=\"bold\">" + ((input * 0.25).toFixed(2)).replace(".", ",") + "$</span>";
 		}
 	}
 	if (inputEle.id == "ounce") {
