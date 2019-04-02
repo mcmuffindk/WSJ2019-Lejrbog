@@ -11,57 +11,9 @@
         <!-- JS -->
         <script type="text/javascript" src="scripts/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/navigation.js"></script>
-        <script>            
-            function onLoad(){
-                dataText = JSON.parse(localStorage.getItem("dataText"));
-                dataNums = JSON.parse(localStorage.getItem("dataNums"));
-
-                for(var i = 0; i < 11; i++){
-                    var dag = document.getElementById("dag0").cloneNode(true);
-                    dag.children[0].innerHTML = "Dag " + (i+2);
-                    dag.id = "dag"+(i+1);
-                    document.getElementById("main").appendChild(dag);
-                }
-
-                if(dataText != null){
-                    var dag = document.getElementById("dag0").cloneNode(true);
-                    dag.childNodes[5].value = dataText[0];
-                    for(var i = 0; i < 12; i++){
-                        document.getElementById("dag"+i).childNodes[5].value = dataText[i]; 
-
-                    }
-                }
-
-                if(dataNums != null){
-                    var dag = document.getElementById("dag0").cloneNode(true);
-                    dag.childNodes[3].value = dataNums[0];
-                    for(var i = 0; i < 12; i++){
-                        document.getElementById("dag"+i).childNodes[3].value = dataNums[i]; 
-
-                    }
-                }
-
-            }
-
-            function saveReflection(){
-                var dataText = [];
-                for(var i = 0; i < 12; i++){
-                    dataText[i] = document.getElementById("dag"+i).childNodes[5].value;
-                }
-                localStorage.setItem("dataText", JSON.stringify(dataText));
-            }
-
-            function saveScore(){
-                var dataNums = [];
-                for(var i = 0; i < 12; i++){
-                    dataNums[i] = document.getElementById("dag"+i).childNodes[3].value;
-                }
-                localStorage.setItem("dataNums", JSON.stringify(dataNums));
-            }
-        </script>
     </head>
 
-    <body onload="onLoad()">
+    <body>
 
         <div id="wrapper">
 
@@ -71,23 +23,6 @@
 
             <div id="main">
 
-                <div id="dag0">
-                    <h1> Dag 1</h1>
-                    <select id="score" oninput="saveScore()">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
-                    <textarea id="reflektion" type="text" style="width: 100%; height: 6em; line" oninput="saveReflection()"> </textarea>
-                    <br>
-                </div>
             </div>
         </div>
     </body>
