@@ -44,3 +44,5 @@ function saveScore() {
 	}
 	localStorage.setItem("dataNums", JSON.stringify(dataNums));
 }
+
+$(onLoad);
