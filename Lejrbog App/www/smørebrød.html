@@ -1,31 +1,185 @@
 <!doctype html>
 <html>
-<head>
-    <title>Lejrbog</title>
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="css/navigation.css">
-    <link type="text/css" rel="stylesheet" href="css/all.min.css">
-    <!-- JS -->
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/navigation.js"></script>
-</head>
+    <head>
+        <title>Lejrbog</title>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/navigation.css">
+        <link type="text/css" rel="stylesheet" href="css/all.min.css">
+        <!-- JS -->
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/navigation.js"></script>
+        <script type="text/javascript" src="scripts/sm%C3%B8rrebr%C3%B8d.js"></script>
 
-<body>
-    
-	<div id="wrapper">
-		
-		<div id="nav">
-			<!-- NAVIGATION -->
-		</div>
-		
-		<div id="main">
-		
-		</div>
-		
-	</div>
-		
-</body>
-</html>
+        <style>
+            .collapsible {
+                background-color: #f5cba2;
+                color: black;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f5cba2;
+            }
+
+            img{
+                display: block;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body onload="start()">
+
+        <div id="wrapper">
+
+            <div id="nav">
+                <!-- NAVIGATION -->
+            </div>
+
+            <div id="main">
+                <button class="collapsible"><b>Makrel-i-tomat-mad - Mackerel-in-tomato Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Rugbrød med makrel i tomat, toppes gerne med mayonnaise.
+                        <br><i>Dark rye bread with mackerel fish in tomato sauce, topped with mayonnaise.</i>
+                    </p>
+                    <img src="images/bread/picture/mad.png">
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Stjerneskud - Shooting star</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Smurt franskbrød med to stykker fisk, et stykke dampet hvid fisk i den ene halvdel og paneret rødspætte i den anden halvdel (fiskefilet). Toppes med rejer. Dekoreret med mayonnaise, rød kaviar og en citronskive. 
+                        <br><i>Buttered white bread with two pieces of fish, one half is covered with steamed white fish, while the other half is covered with fried, battered plaice. Topped with shrimpæ Decorated with mayonnaise, red caviar and a slice of lemon</i>
+                    </p>
+                    <img src="images/bread/picture/mad.png">
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Flæskestegssandwich - Roast Pork Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Rugbrød med flæskesteg og varm rødkål. Serveres gerne med syltede agurker, appelsin og karse.
+                        <br><i>Dark rye bread with roast pork and hot red cabbage. Can be served with pickled cucumber, orange, and garden cress on top.</i>
+                    </p>
+                    <img src="images/bread/picture/mad.png">
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Hakkebøfmad - Minced Beef Steak Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Rugbrød med hakkebøf med stegte bløde løg oven på. Ofte med enten syltede agurker eller rødbede på. Kan også laves med spejlæg på. 
+                        <br><i>Dark rye bread with a hamburger steak and saucéed onions. Often served with either pickled cucumber or pickled beetroot on top. </i>
+                    </p>
+                    <img src="images/bread/picture/mad.png">
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Kartoffelmad - Potato Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Rugbrød med kogte kartofler, mayonnaise og enten løg, purløg eller ramsløg. I Nogle variationer er løgene stegt i stedet for rå.
+                        <br><i>Dark rye bread with boiled potatoes, mayonnaise, and onions, chives or ramsons on top. Some variations have fried onions instead of raw. </i>
+                    </p>
+                    <img src="images/bread/picture/mad.png">
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Leverpostejsmad - Liver Paté Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Rugbrød med leverpostej. Ses gerne med enten, agurk, rødbeder, asier eller bacon oven på. Kan også have salat under leverpostejen.
+                        <br><i>Dark rye bread with liver pâté. Served with either cucumber slices, pickled beetroot, gherkins, or bacon on top. Can be made with a lettuce leaf under the liver pâté.</i>
+                    </p>
+                    <img src="images/bread/picture/mad.png">
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Rejemad - Shrimp Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <img src="images/bread/picture/mad.png">
+                    <p style="text-align: center">Rugbrød med pillede rejer, mayonnaise, citron og enten dild eller karse på toppen. I Nogle variationer er der tilføjet tomat.
+                        <br><i>Dark rye bread with peeled shrimp, mayonnaise, lemon and either dill or cress on top. Some variations are with tomatoes too.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Skærpekødmad - “Skærpekød”/Skerpikjøt Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <img src="images/bread/picture/mad.png">
+                    <p style="text-align: center">Enten rugbrød eller franskbrød med skærpekød. Skærpekød er fra færøerne, det laves ved at lade fårekød vindtørre, så det fermenteres. 
+                        <br><i>Either dark rye bread or white bread with Skerpikjøt. Skerpikjøt is from the Faroe islands, the meat is made by wind drying sheep meat and let it be fermented.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Sol over Gudhjem - Sun Above Gudhjem</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <img src="images/bread/picture/mad.png">
+                    <p style="text-align: center">Rugbrød med røget sild, rå æggeblomme, løg eller purløg samt radiser. Bornholmsk smørrebrød navngivet efter den bornholmske by Gudhjem.
+                        <br><i>Dark rye bread with smoked herring, raw egg yolk, onion or chives, and radishes. Bornholmian smørrebrød named after the Bornholmian town Gudhjem.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Spegepølsemad - roughly translates to Salami Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <img src="images/bread/picture/mad.png">
+                    <p style="text-align: center">Rugbrød med spegepølse og remoulade. Kan toppes med friske og syltede agurker, ristede  og rå løg og tomat. 
+                        <br><i>Dark rye bread with salami and remoulade. Can be topped with fresh and pickled cucumber, fried and raw onion and tomato. </i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Tartarmad - Tartar Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <img src="images/bread/picture/mad.png">
+                    <p style="text-align: center">Rugbrød med råt hakket oksekød, toppet med hakkede løg, kapers, peberrod og syltede agurker, samt en æggeblomme. 
+                        <br><i>Dark rye bread with raw chopped beef, topped with chopped onions, capers, horseradish and pickled cucumber, as well as an egg yolk. </i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible"><b>Rullepølsemad - Rolled Seasoned Meat Sandwich</b></button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <img src="images/bread/picture/mad.png">
+                    <p style="text-align: center">Rugbrød med rullepølse, sky og rå løgringe. Toppes eventuelt med karse.
+                        <br><i>Dark rye bread cold cuts of rolled pock neck fillet, sky (topping made from the juices from meat) and raw onion rings. Can be topped with cress. </i>
+                    </p>
+                </div>
+            </div>
+            </body>
+        </html>
