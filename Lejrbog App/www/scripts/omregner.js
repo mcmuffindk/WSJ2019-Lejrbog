@@ -11,6 +11,9 @@ xmlhttp.send();
 
 function convert(inputEle) {
 	var input = inputEle.value.replace(",", ".");
+            if(rate == 0){
+            rate = 6.6808;
+        }
 	if (inputEle.id == "USD") {
 		convertWrite(document.getElementById("DKK"), input, rate, true);
 	}

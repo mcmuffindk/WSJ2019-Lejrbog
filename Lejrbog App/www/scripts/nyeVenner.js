@@ -30,15 +30,18 @@
                 z.innerHTML=email1;
                 w.innerHTML=number1;
                 q.innerHTML="X";
+                q.width="1px";
                 q.addEventListener("click", function(){del(this)}); 
             }
 
             function del(id){
                 var index = id.parentNode.rowIndex;
-                if(confirm("Er du sikker på at du vil slette " + stuff[index-1].name + "?")){
-                    if(confirm("Er du helt sikker, det kan ikke blive gjort om")){
+                console.log(stuff);
+                console.log(index);
+                if(confirm("Er du sikker på at du vil slette " + stuff[index-2].name + "?")){
+                    if(confirm("Er du helt sikker? Det kan ikke blive gjort om")){
                         document.getElementById('venner').deleteRow(index);   
-                        stuff.splice(index-1,1);
+                        stuff.splice(index-2,1);
                         localStorage.setItem("data", JSON.stringify(stuff));
                     }
                 }

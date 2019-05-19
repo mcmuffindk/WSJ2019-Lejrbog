@@ -1,0 +1,30 @@
+#main {
+    margin: 0em 1em 1.5em 1em;
+    overflow-y: auto;
+}
+
+#main h1 {
+    text-align: center
+}
+
+#main p {
+    text-align: left;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.unit {
+    margin: auto;
+}
+
+hr {
+    border-style: solid;
+    border-color: #AB774F;
+}
+
+img{
+    margin: auto;
+    display: block;
+}

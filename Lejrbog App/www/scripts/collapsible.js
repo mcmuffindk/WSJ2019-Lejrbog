@@ -1,16 +1,11 @@
-function start(){
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-    }
+function toggleDrop(e) {
+	if ($(e.nextElementSibling).css("display") !== "none") {
+		$(e.nextElementSibling).css("display", "none");
+		$(e).children().toggleClass('fa-chevron-down', 1);
+		$(e).children().toggleClass('fa-chevron-right', 0);
+	} else {
+		$(e.nextElementSibling).css("display", "block");
+		$(e).children().toggleClass('fa-chevron-right', 1);
+		$(e).children().toggleClass('fa-chevron-down', 0);
+	}
 }

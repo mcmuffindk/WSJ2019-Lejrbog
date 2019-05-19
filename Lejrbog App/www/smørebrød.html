@@ -36,13 +36,22 @@
 
             <div id="main">
                 <h1 style="text-align: center"> Smørrebrød på engelsk</h1>
-                <h3 style="margin: 1em"> Parlør</h3>
+                <h3 style="margin: 1em"> Generelt om smørrebrød</h3>
                 <p><b>Smørrebrød:</b> <i>Danish open sandwich </i>, oversættes direkte til “buttered bread”, men kaldes også bare smørrebrød
                     <br><b>Rugbrød:</b> <i>rye bread (a dense dark brown bread made from sour dough)</i>
                     <br><b>Pålæg:</b> i flertal kaldet <i>cold cuts</i>, hvis det er kød kaldes det cold meat
                     <br><b>Franskbrød:</b> <i>white bread</i>
                     <br><b>Mad (som i “jeg skal have en ostemad”): </b>findes ikke en direkte oversættelse. Det bedste ord er <i>sandwich</i>, selvom det ofte i Danmark leder tankerne hen på to stykker brød, hvor smørrebrød i de fleste tilfælde blot er et stykke brød med pålæg. </p>
-                <button class="collapsible"><b>Makrel-i-tomat-mad - Mackerel-in-tomato Sandwich</b></button>
+                
+            <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Kontingentmærket</button>
+                <div class="content">
+                    <img src="images/bread/badge/mad.png">
+                    <p style="text-align: center">Kontigentmærket består af makrel-i-tomat-mad øverst og stjerneskud til venstre. </p>
+                </div>
+                
+                <hr>
+                
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Makrel-i-tomat-mad - Mackerel-in-tomato Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -53,7 +62,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Stjerneskud - Shooting star</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Stjerneskud - Shooting star</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -64,7 +73,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Flæskestegssandwich - Roast Pork Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Flæskestegssandwich - Roast Pork Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -86,7 +95,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Kartoffelmad - Potato Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Kartoffelmad - Potato Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -97,7 +106,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Leverpostejsmad - Liver Paté Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Leverpostejsmad - Liver Paté Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -109,7 +118,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Rejemad - Shrimp Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Rejemad - Shrimp Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -120,7 +129,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Skærpekødmad - “Skærpekød”/Skerpikjøt Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Skærpekødmad - “Skærpekød”/Skerpikjøt Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -131,7 +140,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Sol over Gudhjem - Sun Above Gudhjem</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Sol over Gudhjem - Sun Above Gudhjem</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -142,7 +151,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Spegepølsemad - roughly translates to Salami Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Spegepølsemad - roughly translates to Salami Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -153,7 +162,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Tartarmad - Tartar Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Tartarmad - Tartar Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
@@ -164,7 +173,7 @@
 
                 <hr>
 
-                <button class="collapsible"><b>Rullepølsemad - Rolled Seasoned Meat Sandwich</b></button>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Rullepølsemad - Rolled Seasoned Meat Sandwich</button>
                 <div class="content">
                     <img src="images/bread/badge/mad.png">
                     <img src="images/bread/picture/mad.png">
