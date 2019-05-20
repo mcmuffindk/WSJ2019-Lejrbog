@@ -23,3 +23,9 @@
 .country {
 	margin-top: 6em;
 }
+
+img{
+    display: block;
+    margin: 1%;
+    width: 80%;
+}
