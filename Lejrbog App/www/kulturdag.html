@@ -9,11 +9,24 @@
         <link type="text/css" rel="stylesheet" href="css/navigation.css">
         <link type="text/css" rel="stylesheet" href="css/all.min.css">
         <link type="text/css" rel="stylesheet" href="css/collapsible.css">
-        <link type="text/css" rel="stylesheet" href="css/vaerdier.css">
+        <link type="text/css" rel="stylesheet" href="css/kulturdag.css">
         <!-- JS -->
         <script type="text/javascript" src="scripts/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/navigation.js"></script>    
         <script type="text/javascript" src="scripts/collapsible.js"></script>
+        <script>            
+            function languageChange(){
+                var sel = document.getElementById("language")
+                var opt = sel.options[sel.selectedIndex].value;
+                if(opt == "Dansk"){
+                    $("#games").load("games/danish.html");
+                }else if(opt =="Fransk"){
+                    $("#games").load("games/french.html");
+                }else if(opt == "Spansk"){
+                    $("#games").load("games/spanish.html");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -26,16 +39,26 @@
 
             <div id="main">
                 <h1 style="text-align: center">Kulturdag</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                
-                <h4>skridt 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h4>skridt 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h4>skridt 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+                <p>I det følgende materiale kan du orientere dig i, hvad kulturdagen er, hvordan selve dagen kommer til at foregå og hvilke aktiviteter din gruppe kan tilbyde.</p>
 
+                <h4>Hvad er kulturdag?</h4>
+                <p>Kulturdagen er en dag, hvor man kan få et indblik i, hvilke traditioner og hvilken kultur andre lande har. Dagen finder sted hele dagen den 26. Juli. Alle lejrens almindelige aktiviteter lukker den dag, hvorimod kontingenterne/grupperne står for at laver nogle aktiviteter og eventuelle smagsprøver. Om aftenen vil der være et stadionarrangement for alle deltagere.I det følgende materiale kan du finde beskrivelser af lege og nogle opskrifter du kan lave med ingredienser fra USA. Vær opmærksom på, at der kommer til at være kulturer der er meget forskellige, derfor anbefaler vi, at kun spejdere introducerer aktiviteter for spejdere og ledere kun introducerer for ledere.</p>
+
+                <hr>
+                <hr>
+
+                <select id="language" style="background: beige" onchange="languageChange()">
+                    <option id="dansih">Dansk</option>
+                    <option id="english">Engelsk</option>
+                    <option id="french">Fransk</option>
+                    <option id="spanish">Spansk</option>
+                </select>
+                <div id="games" onload="languageChange();">
+                    
+                </div>
+                
+                <script>languageChange();</script>
+            </div>
         </div>
 
     </body>
