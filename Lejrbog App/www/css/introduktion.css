@@ -11,11 +11,14 @@
 .content h1 {
 	width: 0em;
 	display: inline-block;
-	margin-top: 0.1675em;
-	margin-bottom: 0.1675em;
+	margin-top: 0em;
+	margin-bottom: 0em;
 }
 .content h1 a {
 	color: white;
+}
+#jamboree h1 {
+	margin-bottom: 0.710em !important;
 }
 #df {
 	margin-left: 28%;
