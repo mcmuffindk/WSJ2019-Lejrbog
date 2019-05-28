@@ -11,6 +11,8 @@
 .content h1 {
 	width: 0em;
 	display: inline-block;
+	margin-top: 0.1675em;
+	margin-bottom: 0.1675em;
 }
 .content h1 a {
 	color: white;
