@@ -2,11 +2,31 @@
 	margin: 0em 1em 1.5em 1em;
 	overflow-y: auto;
 }
-
 #main h1 {
 	text-align: center
 }
-
 #main p {
 	text-align: center;
+}
+.content h1 {
+	width: 0em;
+	display: inline-block;
+}
+.content h1 a {
+	color: white;
+}
+#df {
+	margin-left: 28%;
+}
+#di {
+	margin-left: 33%;
+}
+#jf {
+	margin-left: 18.5%;
+}
+#ji {
+	margin-left: 25%;
+}
+#jt {
+	margin-left: 25%;
 }

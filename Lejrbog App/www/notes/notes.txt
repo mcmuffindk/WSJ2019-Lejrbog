@@ -18,7 +18,7 @@ input/output script both ways
 Spørg gruppe evt
 
 ### DESIGN ###
-Spørg gruppe og nogen evt kan designe
+Spørg gruppe om nogen evt kan designe
 
 -Colors
 
