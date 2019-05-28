@@ -1,26 +1,19 @@
 - Forside
 Færdig
 
-- Fordybelse
+- Introduktion
+Færdig
 
-- God skik i USA
-
-- JU
-
-- Smørrebrød
-
-- Telefonbog
-
-- Valuta
-input/output script both ways
-
-- Indstillinger
-Spørg gruppe evt
+- Nye venner
+Gemmer ikke
 
 ### DESIGN ###
 Spørg gruppe om nogen evt kan designe
 
--Colors
+- <hr> tags
+#000 eller #AB774F
+
+- Colors
 
 Orange baggrund:	#f37236
 Brun menu:			#ab774f
