@@ -38,7 +38,7 @@
                 var index = id.parentNode.rowIndex;
                 console.log(stuff);
                 console.log(index);
-                if(confirm("Er du sikker på at du vil slette " + stuff[index-2].name + "?")){
+                if(confirm("Er du sikker på at du vil slette " + stuff[index-1].name + "?")){
                     if(confirm("Er du helt sikker? Det kan ikke blive gjort om")){
                         document.getElementById('venner').deleteRow(index);   
                         stuff.splice(index-2,1);
