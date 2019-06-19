@@ -1,0 +1,37 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+#main h1 {
+	text-align: center
+}
+#main p {
+	text-align: center;
+}
+.content h1 {
+	width: 0em;
+	display: inline-block;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+.content h1 a {
+	color: white;
+}
+#jamboree h1 {
+	margin-bottom: 0.710em !important;
+}
+#df {
+	margin-left: 28%;
+}
+#di {
+	margin-left: 33%;
+}
+#jf {
+	margin-left: 18.5%;
+}
+#ji {
+	margin-left: 25%;
+}
+#jt {
+	margin-left: 25%;
+}

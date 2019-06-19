@@ -1,0 +1,25 @@
+#main .collapsible {
+	background-color: #f5cba2;
+	color: #000000;
+	cursor: pointer;
+	padding: 1.2em;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 1em;
+}
+
+#main .content {
+	padding: 0em 1.2em;
+	display: none;
+	overflow: hidden;
+	background-color: #f5cba2;
+}
+hr {
+	border-color: #000;
+	border-width: 0.03125em;
+}
+.content p {
+	margin-top: 0em;
+}

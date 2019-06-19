@@ -1,0 +1,23 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+#main h1 {
+	text-align: center
+}
+#main p {
+	margin-bottom: 0em;
+}
+.lov {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+.korps {
+	margin-top: 6em;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}

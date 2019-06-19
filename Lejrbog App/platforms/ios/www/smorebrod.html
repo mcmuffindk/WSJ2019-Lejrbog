@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lejrbog</title>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/navigation.css">
+        <link type="text/css" rel="stylesheet" href="css/all.min.css">
+        <link type="text/css" rel="stylesheet" href="css/collapsible.css">
+        <!-- JS -->
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/navigation.js"></script>
+        <script type="text/javascript" src="scripts/collapsible.js"></script>
+
+        <style>
+            img{
+                margin: auto;
+                display: block;
+                width: 95%;
+            }
+            
+            p{
+                margin: 1em;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <div id="nav">
+                <!-- NAVIGATION -->
+            </div>
+
+            <div id="main">
+                <h1 style="text-align: center"> Smørrebrød på engelsk</h1>
+                <h3 style="margin: 1em"> Generelt om smørrebrød</h3>
+                <p><b>Smørrebrød:</b> <i>Danish open sandwich </i>, oversættes direkte til “buttered bread”, men kaldes også bare smørrebrød
+                    <br><b>Rugbrød:</b> <i>rye bread (a dense dark brown bread made from sour dough)</i>
+                    <br><b>Pålæg:</b> i flertal kaldet <i>cold cuts</i>, hvis det er kød kaldes det cold meat
+                    <br><b>Franskbrød:</b> <i>white bread</i>
+                    <br><b>Mad (som i “jeg skal have en ostemad”): </b>findes ikke en direkte oversættelse. Det bedste ord er <i>sandwich</i>, selvom det ofte i Danmark leder tankerne hen på to stykker brød, hvor smørrebrød i de fleste tilfælde blot er et stykke brød med pålæg. </p>
+                
+            <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Kontingentmærket</button>
+                <div class="content">
+                    <img src="images/bread/badge/Contingent.png">
+                    <p style="text-align: center">Kontigentmærket består af makrel-i-tomat-mad øverst og stjerneskud til venstre. </p>
+                </div>
+                
+                <hr>
+                
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Makrel-i-tomat-mad - Mackerel-in-tomato Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/makrel.png">
+                    <img src="images/bread/picture/makrel.png">
+                    <p style="text-align: center">Rugbrød med makrel i tomat, toppes gerne med mayonnaise.
+                        <br><i>Dark rye bread with mackerel fish in tomato sauce, topped with mayonnaise.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Stjerneskud - Shooting star</button>
+                <div class="content">
+                    <img src="images/bread/badge/stjerneskud.png">
+                    <img src="images/bread/picture/stjerneskud.png">
+                    <p style="text-align: center">Smurt franskbrød med to stykker fisk, et stykke dampet hvid fisk i den ene halvdel og paneret rødspætte i den anden halvdel (fiskefilet). Toppes med rejer. Dekoreret med mayonnaise, rød kaviar og en citronskive. 
+                        <br><i>Buttered white bread with two pieces of fish, one half is covered with steamed white fish, while the other half is covered with fried, battered plaice. Topped with shrimpæ Decorated with mayonnaise, red caviar and a slice of lemon</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Æggemad - Egg Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/aggemad.png">
+                    <img src="images/bread/picture/aggemad.png">
+                    <p style="text-align: center">Rugbrød med ægge-skiver, mayonnaise og karse. Kan toppes med enten rejer eller tomat.<br><i>Dark rye bread with egg slices, mayonnaise and cress. Can be topped with either tomato or shrimp</i>
+                    </p>
+                </div>
+                
+                <hr>
+                
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Flæskestegssandwich - Roast Pork Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/flaskesteg.png">
+                    <img src="images/bread/picture/flaskesteg.png">
+                    <p style="text-align: center">Rugbrød med flæskesteg og varm rødkål. Serveres gerne med syltede agurker, appelsin og karse.
+                        <br><i>Dark rye bread with roast pork and hot red cabbage. Can be served with pickled cucumber, orange, and garden cress on top.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Hakkebøfmad - Minced Beef Steak Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/hakkebof.png">
+                    <img src="images/bread/picture/hakkebof.png">
+                    <p style="text-align: center">Rugbrød med hakkebøf med stegte bløde løg oven på. Ofte med enten syltede agurker eller rødbede på. Kan også laves med spejlæg på. 
+                        <br><i>Dark rye bread with a hamburger steak and saucéed onions. Often served with either pickled cucumber or pickled beetroot on top. </i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Kartoffelmad - Potato Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/kartoffel.png">
+                    <img src="images/bread/picture/kartoffel.png">
+                    <p style="text-align: center">Rugbrød med kogte kartofler, mayonnaise og enten løg, purløg eller ramsløg. I Nogle variationer er løgene stegt i stedet for rå.
+                        <br><i>Dark rye bread with boiled potatoes, mayonnaise, and onions, chives or ramsons on top. Some variations have fried onions instead of raw. </i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Leverpostejsmad - Liver Paté Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/leverpostej.png">
+                    <img src="images/bread/picture/leverpostej.png">
+
+                    <p style="text-align: center">Rugbrød med leverpostej. Ses gerne med enten, agurk, rødbeder, asier eller bacon oven på. Kan også have salat under leverpostejen.
+                        <br><i>Dark rye bread with liver pâté. Served with either cucumber slices, pickled beetroot, gherkins, or bacon on top. Can be made with a lettuce leaf under the liver pâté.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Rejemad - Shrimp Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/reje.png">
+                    <img src="images/bread/picture/reje.png">
+                    <p style="text-align: center">Rugbrød med pillede rejer, mayonnaise, citron og enten dild eller karse på toppen. I Nogle variationer er der tilføjet tomat.
+                        <br><i>Dark rye bread with peeled shrimp, mayonnaise, lemon and either dill or cress on top. Some variations are with tomatoes too.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Skærpekødmad - “Skærpekød”/Skerpikjøt Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/skarpekod.png">
+                    <img src="images/bread/picture/skarpekod.png">
+                    <p style="text-align: center">Enten rugbrød eller franskbrød med skærpekød. Skærpekød er fra færøerne, det laves ved at lade fårekød vindtørre, så det fermenteres. 
+                        <br><i>Either dark rye bread or white bread with Skerpikjøt. Skerpikjøt is from the Faroe islands, the meat is made by wind drying sheep meat and let it be fermented.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Sol over Gudhjem - Sun Above Gudhjem</button>
+                <div class="content">
+                    <img src="images/bread/badge/sol.png">
+                    <img src="images/bread/picture/sol.png">
+                    <p style="text-align: center">Rugbrød med røget sild, rå æggeblomme, løg eller purløg samt radiser. Bornholmsk smørrebrød navngivet efter den bornholmske by Gudhjem.
+                        <br><i>Dark rye bread with smoked herring, raw egg yolk, onion or chives, and radishes. Bornholmian smørrebrød named after the Bornholmian town Gudhjem.</i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Spegepølsemad - roughly translates to Salami Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/spegepolse.png">
+                    <img src="images/bread/picture/spegepolse.png">
+                    <p style="text-align: center">Rugbrød med spegepølse og remoulade. Kan toppes med friske og syltede agurker, ristede  og rå løg og tomat. 
+                        <br><i>Dark rye bread with salami and remoulade. Can be topped with fresh and pickled cucumber, fried and raw onion and tomato. </i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Tartarmad - Tartar Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/tartar.png">
+                    <img src="images/bread/picture/tartar.png">
+                    <p style="text-align: center">Rugbrød med råt hakket oksekød, toppet med hakkede løg, kapers, peberrod og syltede agurker, samt en æggeblomme. 
+                        <br><i>Dark rye bread with raw chopped beef, topped with chopped onions, capers, horseradish and pickled cucumber, as well as an egg yolk. </i>
+                    </p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Rullepølsemad - Rolled Seasoned Meat Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/rullepolse.png">
+                    <img src="images/bread/picture/rullepolse.png">
+                    <p style="text-align: center">Rugbrød med rullepølse, sky og rå løgringe. Toppes eventuelt med karse.
+                        <br><i>Dark rye bread cold cuts of rolled pock neck fillet, sky (topping made from the juices from meat) and raw onion rings. Can be topped with cress. </i>
+                    </p>
+                </div>
+                
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Tomatmad - Tomato Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/tomat.png">
+                    <img src="images/bread/picture/tomat.png">
+                    <p style="text-align: center">Rugbrød med tomatskiver,mayonnaise og karse. <br> <i>Dark rye bread with tomato slices, mayonnaise and cress</i>
+                    </p>
+                </div>
+                
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Torskerognsmad - Cod Roe Sandwich</button>
+                <div class="content">
+                    <img src="images/bread/badge/torskerogn.png">
+                    <img src="images/bread/picture/torskerogn.png">
+                    <p style="text-align: center">Rugbrød med torske-rogn og remoulade. Kan toppes med tomat, agurk og ristede løg.<br><i> Dark rye bread with cod roe and remoulade. Can be topped with tomato, cucumber and fried onions.</i>
+                    </p>
+                </div>
+                
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Ostemad med karse - Cheese Sandwich with Cress</button>
+                <div class="content">
+                    <img src="images/bread/badge/ost.png">
+                    <img src="images/bread/picture/ost.png">
+                    <p style="text-align: center">Enten rugbrød eller franskbrød med ost og skiver af peberfrugt. <br> <i>Either dark rye bread or white bread with cheese and pepper slices.</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

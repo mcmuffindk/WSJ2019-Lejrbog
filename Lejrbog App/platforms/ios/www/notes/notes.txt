@@ -1,0 +1,25 @@
+- Forside
+Færdig
+
+- Introduktion
+Færdig
+
+- Nye venner
+Gemmer ikke
+
+### DESIGN ###
+Spørg gruppe om nogen evt kan designe
+
+- <hr> tags
+#000 eller #AB774F
+
+- Colors
+
+Orange baggrund:	#f37236
+Brun menu:			#ab774f
+Sort:				#000000
+Beige:				#f5cba2
+Gul:				#f6d22a
+Grøn:				#8ac97c
+Mørk pink:			#dd6b77
+Rød:				#ee4538
