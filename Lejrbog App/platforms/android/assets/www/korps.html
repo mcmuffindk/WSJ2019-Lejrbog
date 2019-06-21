@@ -1,207 +1,203 @@
 <!doctype html>
 <html>
-<head>
-    <title>Lejrbog</title>
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="css/navigation.css">
-    <link type="text/css" rel="stylesheet" href="css/all.min.css">
-	<link type="text/css" rel="stylesheet" href="css/korps.css">
-    <!-- JS -->
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/navigation.js"></script>
-</head>
+    <head>
+        <title>Lejrbog</title>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/navigation.css">
+        <link type="text/css" rel="stylesheet" href="css/all.min.css">
+        <link type="text/css" rel="stylesheet" href="css/korps.css">
+        <link type="text/css" rel="stylesheet" href="css/collapsible.css">
+        <!-- JS -->
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/navigation.js"></script>
+        <script type="text/javascript" src="scripts/collapsible.js"></script>
+    </head>
 
-<body>
-    
-	<div id="wrapper">
-		
-		<div id="nav">
-	
-	    	<div class="icon-bar">
-    	    	<a href="index.html"><i class="fas fa-home"></i></a>
-        		<a href="telefonbog.html"><i class="fas fa-phone"></i></a>
-        		<a href="førstehjælp.html"><i class="fas fa-medkit"></i></a>
-        		<a href="ordbog.html"><i class="fas fa-globe"></i></a>
-        		<a onclick="toggleNav()"><i class="fas fa-bars"></i></a>
-    		</div>
-    
-    		<div id="side-bar" class="sidenav">
-        		<a href="fordybelse.html">Fordybelse</a>
-        		<a href="førstehjælp.html">Førstehjælp</a>
-        		<a href="skik.html">God skik i USA</a>
-        		<a href="ju.html">JU</a>
-        		<a href="kontingentet.html">Kontingentet</a>
-        		<a href="korps.html">Korps</a>
-        		<a href="facts.html">Landefacts</a>
-        		<a href="ordbog.html">Ordbog</a>
-        		<a href="rundrejsen.html">Rundrejsen</a>
-        		<a href="sangbog.html">Sangbog</a>
-        		<a href="smørebrød.html">Smørebrød</a>
-        		<a href="telefonbog.html">Telefonbog</a>
-        		<a href="valuta.html">Valuta</a>
-				<a href="settings.html">Indstillinger</a>
-    		</div>
-    
-		</div>
-		
-		<div id="main">
-		
-			<h1>Korps</h1>
-			
-			<div id="dds" class="korps">
-				<h3>Det Danske Spejderkorps</h3>
-				<p><span class="bold">Uniformsfarve:</span> Blå</p>
-				<p><span class="bold">Medlemmer:</span> Piger og drenge</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">Den, der er med i spejdernes fællesskab, gør sit bedste for</p>
-				<p class="lov">- at finde sin egen tro og have respekt for andres</p>
-				<p class="lov">- at værne om naturen</p>
-				<p class="lov">- at være en god kammerat</p>
-				<p class="lov">- at være hensynsfuld og hjælpe andre</p>
-				<p class="lov">- at være til at stole på</p>
-				<p class="lov">- at høre andres meninger og danne sine egne</p>
-				<p class="lov">- at tage medansvar i familie og samfund</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Jeg lover at holde spejderloven</p>
-			</div>
+    <body>
 
-			<div id="kfum" class="korps">
-				<h3>KFUM-spejderne</h3>
-				<p><span class="bold">Uniformsfarve:</span> Grøn</p>
-				<p><span class="bold">Medlemmer:</span> Piger og drenge</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">En spejder</p>
-				<p class="lov">- lytter til Guds ord</p>
-				<p class="lov">- er hjælpsom</p>
-				<p class="lov">- respekterer andre</p>
-				<p class="lov">- værner om naturen</p>
-				<p class="lov">- er til at stole på</p>
-				<p class="lov">- tager medansvar</p>
-				<p class="lov">- finder sin egen mening</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Jeg lover at gøre mit bedste for at lytte til guds ord, holde spejderloven og hver dag gøre noget for at glæde andre</p>
-			</div>
-			
-			<div id="dgp" class="korps">
-				<h3>De Grønne Pigespejdere</h3>
-				<p><span class="bold">Uniformsfarve:</span> Grøn</p>
-				<p><span class="bold">Medlemmer:</span> Piger</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">En spejder skal</p>
-				<p class="lov">- tale sandhed</p>
-				<p class="lov">- stifte fred</p>
-				<p class="lov">- dele med <span style="color: red">Vandre (ANDRE??)</span></p> <!-- ANDRE?? -->
-				<p class="lov">- være en god kammerat</p>
-				<p class="lov">- værne om naturen</p>
-				<p class="lov">- vise hensyn og hjælpe andre</p>
-				<p class="lov">- leve i hjem og samfund med kærlighed og omtanke</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Som spejder lover jeg at gøre mit bedste for at ære Gud ved at leve efter Hans vilje</p>
-			</div>
-			
-			<div id="bap" class="korps">
-				<h3>Baptistspejderne</h3>
-				<p><span class="bold">Uniformsfarve:</span> Blå</p>
-				<p><span class="bold">Medlemmer</span> Piger og drenge</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">Som spejder vil jeg lytte til guds ord</p>
-				<p class="lov">Som spejder har jeg medansvar for det samfund, jeg lever i</p>
-				<p class="lov">Som spejder vil jeg være hensynsfuld og hjælpsom</p>
-				<p class="lov">Som spejder vil jeg være til at stole på</p>
-				<p class="lov">Som spejder vil jeg lytte til andres mening og selv tage standpunkt</p>
-				<p class="lov">Som spejder vil jeg lære naturen at kende og værne om den</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Jeg lover at gøre mit bedste for at holde spejderloven</p>
-			</div>
-			
-			<div id="dss" class="korps">
-				<h3>Dansk Spejderkorps Sydslesvig</h3>
-				<p><span class="bold">Uniformsfarve:</span> Blå</p>
-				<p><span class="bold">Medlemmer:</span> Piger og drenge</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">Som spejdere vil jeg gøre mit bedste for</p>
-				<p class="lov">- at lytte til guds ord</p>
-				<p class="lov">- at værne om naturen</p>
-				<p class="lov">- at være hensynsfulde og hjælpsomme</p>
-				<p class="lov">- at være til at stole på</p>
-				<p class="lov">- at høre andres meninger og selv tage standpunkt</p>
-				<p class="lov">- at tage medansvar i familie og samfund</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Jeg lover at holde spejderloven</p>
-			</div>
-			
-			<div id="føroya" class="korps">
-				<h3>Føroya Skótasamband</h3>
-				<p><span class="bold">Uniformsfarve:</span> Kaki</p>
-				<p><span class="bold">Medlemmer:</span> Piger og drenge</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">Ein skóti tosar altíð sat</p>
-				<p class="lov">Ein skóti er trúgvur móti landi sínum, foreldrum og leiðarum</p>
-				<p class="lov">Ein skóti er ærligur og álítandi</p>
-				<p class="lov">Ein skóti er góður vinur</p>
-				<p class="lov">Ein skóti er riddarligur og hjálpsamur moti øllum</p>
-				<p class="lov">Ein skóti er góður við djór</p>
-				<p class="lov">Ein skóti er lýðin honum, sum rætt hevur at bjóða</p>
-				<p class="lov">Ein skóti arbeiðir við lív og huga</p>
-				<p class="lov">Ein skóti er sparin og hampiligur</p>
-				<p class="lov">Ein skóti er reinur í tonkum, orðum og virkan</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Eg lovi at gera mítt besta fyri</p>
-				<p class="lov">altíð at halda skótalógina</p>
-				<p class="lov">altíð at hjálpa øðrum</p>
-				<p class="lov">og í einum og øllum at visa meg sum ein rættan skóta</p>
-			</div>
-			
-			<div id="føroyukfuk" class="korps">
-				<h3>Føroya KFUK Skótar</h3>
-				<p><span class="bold">Uniformsfarve:</span> Grøn</p>
-				<p><span class="bold">Medlemmer:</span> Piger</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">Skótin er at líta á</p>
-				<p class="lov">Skótin er trúgvur</p>
-				<p class="lov">Skótin er hjálpsamur</p>
-				<p class="lov">Skótin er góður leikbróður</p>
-				<p class="lov">Skótin er fólkaligur og vælsiðaður</p>
-				<p class="lov">Skótin er djóravinur</p>
-				<p class="lov">Skótin er lýðin</p>
-				<p class="lov">Skótin ber trupulleikar væl hýrdur</p>
-				<p class="lov">Skótin er sparin og røkin</p>
-				<p class="lov">Skótin er reinur í hugsan, orð og gerð</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Eg lovi við æru míni og alt tað, eg eri ment</p>
-				<p class="lov">at vera trúgv móti guði og føðilandi mínum</p>
-				<p class="lov">at vera hjálpsom móti øllum menniskjum</p>
-				<p class="lov">og at halda skótalógina</p>
-			</div>
-			
-			<div id="g" class="korps">
-				<h3>G</h3>
-				<p><span class="bold">Uniformsfarve:</span> Grøn</p>
-				<p><span class="bold">Medlemmer:</span> Piger og drenge</p>
-				<p class="bold">Spejderlov:</p>
-				<p class="lov">Skótin er sannur í talu og atferð</p>
-				<p class="lov">Skótin er trúgvur</p>
-				<p class="lov">Skótin er hjálpsamur</p>
-				<p class="lov">Skótin er góður vinur</p>
-				<p class="lov">Skótin er høviskur í øllum lutum</p>
-				<p class="lov">Skótin er djóravinur</p>
-				<p class="lov">Skótin er lýðin</p>
-				<p class="lov">Skótin er sparin og røkin</p>
-				<p class="lov">Skótin er væl hýrdur</p>
-				<p class="lov">Skótin er reinur í huga, orðum og gerðum</p>
-				<p class="bold">Spejderløfte:</p>
-				<p class="lov">Við æru míni gevi eg tað lyftið</p>
-				<p class="lov">At eg eftir førimuni skal vera trúgvur móti guði og landi mínum</p>
-				<p class="lov">Vera hjálpsamur móti øllum og</p>
-				<p class="lov">Halda skótalógina</p>
-			</div>
-			
-		</div>
-		
-	</div>
-		
-</body>
+        <div id="wrapper">
+
+            <div id="nav">
+                <!-- NAVIGATION -->
+            </div>
+
+            <div id="main">
+                <h1>Info om kontingentets spejderkorps</h1>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>DDS</button>
+                <div id="dds" class="korps; content">
+                    <img alt="dds" src="images/korps_logoer/dds.png">  
+                    <p><span class="bold">Uniformsfarve:</span> Blå</p>
+                    <p><span class="bold">Medlemmer:</span> Piger og drenge</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">Den, der er med i spejdernes fællesskab, gør sit bedste for</p>
+                    <p class="lov">- at finde sin egen tro og have respekt for andres</p>
+                    <p class="lov">- at værne om naturen</p>
+                    <p class="lov">- at være en god kammerat</p>
+                    <p class="lov">- at være hensynsfuld og hjælpe andre</p>
+                    <p class="lov">- at være til at stole på</p>
+                    <p class="lov">- at høre andres meninger og danne sine egne</p>
+                    <p class="lov">- at tage medansvar i familie og samfund</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Jeg lover at holde spejderloven</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>KFUM</button>
+                <div id="kfum" class="korps; content">
+                    <img alt="kfum" src="images/korps_logoer/kfum.png">  
+                    <p><span class="bold">Uniformsfarve:</span> Grøn</p>
+                    <p><span class="bold">Medlemmer:</span> Piger og drenge</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">En spejder</p>
+                    <p class="lov">- lytter til Guds ord</p>
+                    <p class="lov">- er hjælpsom</p>
+                    <p class="lov">- respekterer andre</p>
+                    <p class="lov">- værner om naturen</p>
+                    <p class="lov">- er til at stole på</p>
+                    <p class="lov">- tager medansvar</p>
+                    <p class="lov">- finder sin egen mening</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Jeg lover at gøre mit bedste for at lytte til guds ord, holde spejderloven og hver dag gøre noget for at glæde andre</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>De grønne pigespejdere</button>
+                <div id="dgp" class="korps; content">
+                    <img alt="pigespejderne" src="images/korps_logoer/pigespejdere.png">
+                    <p><span class="bold">Uniformsfarve:</span> Grøn</p>
+                    <p><span class="bold">Medlemmer:</span> Piger</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">En spejder skal</p>
+                    <p class="lov">- tale sandhed</p>
+                    <p class="lov">- stifte fred</p>
+                    <p class="lov">- dele med andre </p>
+                    <p class="lov">- være en god kammerat</p>
+                    <p class="lov">- værne om naturen</p>
+                    <p class="lov">- vise hensyn og hjælpe andre</p>
+                    <p class="lov">- leve i hjem og samfund med kærlighed og omtanke</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Som spejder lover jeg at gøre mit bedste for at ære Gud ved at leve efter Hans vilje</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Baptistspejderne</button>
+                <div id="bap" class="korps; content">
+                    <img alt="babtistspejderne" src="images/korps_logoer/babtist.png">
+                    <p><span class="bold">Uniformsfarve:</span> Blå</p>
+                    <p><span class="bold">Medlemmer</span> Piger og drenge</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">Som spejder vil jeg lytte til guds ord</p>
+                    <p class="lov">Som spejder har jeg medansvar for det samfund, jeg lever i</p>
+                    <p class="lov">Som spejder vil jeg være hensynsfuld og hjælpsom</p>
+                    <p class="lov">Som spejder vil jeg være til at stole på</p>
+                    <p class="lov">Som spejder vil jeg lytte til andres mening og selv tage standpunkt</p>
+                    <p class="lov">Som spejder vil jeg lære naturen at kende og værne om den</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Jeg lover at gøre mit bedste for at holde spejderloven</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Dansk Spejderkorps Sydslesvig</button>
+                <div id="dss" class="korps; content">
+                    <img alt="sydslesvig" src="images/korps_logoer/sydslesvig.png">
+                    <p><span class="bold">Uniformsfarve:</span> Blå</p>
+                    <p><span class="bold">Medlemmer:</span> Piger og drenge</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">Som spejdere vil jeg gøre mit bedste for</p>
+                    <p class="lov">- at lytte til guds ord</p>
+                    <p class="lov">- at værne om naturen</p>
+                    <p class="lov">- at være hensynsfulde og hjælpsomme</p>
+                    <p class="lov">- at være til at stole på</p>
+                    <p class="lov">- at høre andres meninger og selv tage standpunkt</p>
+                    <p class="lov">- at tage medansvar i familie og samfund</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Jeg lover at holde spejderloven</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Føroya Skótasamband</button>
+                <div id="føroya" class="korps; content">
+                    <img alt="faeroe" src="images/korps_logoer/faeroe1.png">
+                    <p><span class="bold">Uniformsfarve:</span> Kaki</p>
+                    <p><span class="bold">Medlemmer:</span> Piger og drenge</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">Ein skóti tosar altíð sat</p>
+                    <p class="lov">Ein skóti er trúgvur móti landi sínum, foreldrum og leiðarum</p>
+                    <p class="lov">Ein skóti er ærligur og álítandi</p>
+                    <p class="lov">Ein skóti er góður vinur</p>
+                    <p class="lov">Ein skóti er riddarligur og hjálpsamur moti øllum</p>
+                    <p class="lov">Ein skóti er góður við djór</p>
+                    <p class="lov">Ein skóti er lýðin honum, sum rætt hevur at bjóða</p>
+                    <p class="lov">Ein skóti arbeiðir við lív og huga</p>
+                    <p class="lov">Ein skóti er sparin og hampiligur</p>
+                    <p class="lov">Ein skóti er reinur í tonkum, orðum og virkan</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Eg lovi at gera mítt besta fyri</p>
+                    <p class="lov">altíð at halda skótalógina</p>
+                    <p class="lov">altíð at hjálpa øðrum</p>
+                    <p class="lov">og í einum og øllum at visa meg sum ein rættan skóta</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>Føroya KFUK Skótar</button>
+                <div id="føroyukfuk" class="korps; content">
+                    <img alt="faeroe" src="images/korps_logoer/faeroe2.png">
+                    <p><span class="bold">Uniformsfarve:</span> Grøn</p>
+                    <p><span class="bold">Medlemmer:</span> Piger</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">Skótin er at líta á</p>
+                    <p class="lov">Skótin er trúgvur</p>
+                    <p class="lov">Skótin er hjálpsamur</p>
+                    <p class="lov">Skótin er góður leikbróður</p>
+                    <p class="lov">Skótin er fólkaligur og vælsiðaður</p>
+                    <p class="lov">Skótin er djóravinur</p>
+                    <p class="lov">Skótin er lýðin</p>
+                    <p class="lov">Skótin ber trupulleikar væl hýrdur</p>
+                    <p class="lov">Skótin er sparin og røkin</p>
+                    <p class="lov">Skótin er reinur í hugsan, orð og gerð</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Eg lovi við æru míni og alt tað, eg eri ment</p>
+                    <p class="lov">at vera trúgv móti guði og føðilandi mínum</p>
+                    <p class="lov">at vera hjálpsom móti øllum menniskjum</p>
+                    <p class="lov">og at halda skótalógina</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i>KFUM skótarnir í føroyum</button>
+                <div id="skótarnir" class="korps; content">
+                    <img alt="faeroe" src="images/korps_logoer/faeroe3.png">
+                    <p><span class="bold">Uniformsfarve:</span> Grøn</p>
+                    <p><span class="bold">Medlemmer:</span> Piger og drenge</p>
+                    <p class="bold">Spejderlov:</p>
+                    <p class="lov">Skótin er sannur í talu og atferð</p>
+                    <p class="lov">Skótin er trúgvur</p>
+                    <p class="lov">Skótin er hjálpsamur</p>
+                    <p class="lov">Skótin er góður vinur</p>
+                    <p class="lov">Skótin er høviskur í øllum lutum</p>
+                    <p class="lov">Skótin er djóravinur</p>
+                    <p class="lov">Skótin er lýðin</p>
+                    <p class="lov">Skótin er sparin og røkin</p>
+                    <p class="lov">Skótin er væl hýrdur</p>
+                    <p class="lov">Skótin er reinur í huga, orðum og gerðum</p>
+                    <p class="bold">Spejderløfte:</p>
+                    <p class="lov">Við æru míni gevi eg tað lyftið</p>
+                    <p class="lov">At eg eftir førimuni skal vera trúgvur móti guði og landi mínum</p>
+                    <p class="lov">Vera hjálpsamur móti øllum og</p>
+                    <p class="lov">Halda skótalógina</p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
 </html>

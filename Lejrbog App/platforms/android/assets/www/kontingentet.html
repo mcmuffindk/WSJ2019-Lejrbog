@@ -1,72 +1,81 @@
 <!doctype html>
 <html>
-<head>
-    <title>Lejrbog</title>
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="css/navigation.css">
-    <link type="text/css" rel="stylesheet" href="css/all.min.css">
-	<link type="text/css" rel="stylesheet" href="css/kontingentet.css">
-    <!-- JS -->
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/navigation.js"></script>
-</head>
+    <head>
+        <title>Lejrbog</title>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/navigation.css">
+        <link type="text/css" rel="stylesheet" href="css/all.min.css">
+        <link type="text/css" rel="stylesheet" href="css/kontingentet.css">
+        <link type="text/css" rel="stylesheet" href="css/collapsible.css">
 
-<body>
-    
-	<div id="wrapper">
-		
-		<div id="nav">
-	
-	    	<div class="icon-bar">
-    	    	<a href="index.html"><i class="fas fa-home"></i></a>
-        		<a href="telefonbog.html"><i class="fas fa-phone"></i></a>
-        		<a href="førstehjælp.html"><i class="fas fa-medkit"></i></a>
-        		<a href="ordbog.html"><i class="fas fa-globe"></i></a>
-        		<a onclick="toggleNav()"><i class="fas fa-bars"></i></a>
-    		</div>
-    
-    		<div id="side-bar" class="sidenav">
-        		<a href="fordybelse.html">Fordybelse</a>
-        		<a href="førstehjælp.html">Førstehjælp</a>
-        		<a href="skik.html">God skik i USA</a>
-        		<a href="ju.html">JU</a>
-        		<a href="kontingentet.html">Kontingentet</a>
-        		<a href="korps.html">Korps</a>
-        		<a href="facts.html">Landefacts</a>
-        		<a href="ordbog.html">Ordbog</a>
-        		<a href="rundrejsen.html">Rundrejsen</a>
-        		<a href="sangbog.html">Sangbog</a>
-        		<a href="smørebrød.html">Smørebrød</a>
-        		<a href="telefonbog.html">Telefonbog</a>
-        		<a href="valuta.html">Valuta</a>
-				<a href="settings.html">Indstillinger</a>
-    		</div>
-    
-		</div>
-		
-		<div id="main">
-		
-			<h1>Kontingentet</h1>
-			<p>Denne gang er der 624 folk med fra det danske kontingent. Dette er 174 mere end der var med til Japan i 2015, hvor der var 450 med. Det danske kontingent består af fem forskellige grupper:</p>
-			<h3>Deltager</h3>
-			<p>Der er 468 deltagere fra det danske kontingent fordelt på 13 troppe, hvor en af dem er færøsk. Deltagerne er i aldersgruppen 14-17 år. Det er forresten jer. I er grunden til at lejren kan forløbe.</p>
-			<h3>Leder</h3>
-			<p>Der er i alt 52 ledere, som leder de forskellige troppe i grupper af fire. Lederne er dem i rejser rundt med og som tager sig af jer undervejs.</p>
-			<h3>IST</h3>
-			<p>International Service Team sørger for praktiske opgaver og aktiviteter på lejren. Der er 75 IST’er fra det danske kontingent. IST’erne ligger i deres egen lejr med andre IST’er fra hele verdenen.</p>
-			<h3>NHQ</h3>
-			<p>National Head Quarter er en bod, som præsenterer det danske kontingent til resten af lejren. Der 24 med, der tager sig af NHQ. Desuden sørger de også for at det danske kontingent bliver set udadtil - Både ude og hjemme.</p>
-			<h3>JU</h3>
-			<p>Jamboree Udvalget. Dette er overhovederne i det danske kontingent. Der er 5 medlemmer af Jamboree Udvalget, som hver har deres ansvarsområde.</p>
-			<h3>Kontingentets tema</h3>
-			<p>Når man er på Jamboree i det danske kontingent er det normalt at have et tema, der kan repræsenterer en dansk tradition, som det danske kontingents troppe navngives efter. Denne gang er temaet smørrebrød, så smut gerne ud og hæld rugbrød i alle jeres internationale venner!</p>
-			
-		</div>
-		
-	</div>
-		
-</body>
+        <!-- JS -->
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/navigation.js"></script>
+        <script type="text/javascript" src="scripts/collapsible.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <div id="nav">
+                <!-- NAVIGATION -->
+            </div>
+
+            <div id="main">
+
+                <h1>Info om det danske kontingent</h1>
+                <p>Denne gang er der 624 folk med fra det danske kontingent. Dette er 174 mere end der var med til Japan i 2015, hvor der var 450 med. Det danske kontingent består af fem forskellige grupper.</p>
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i> Deltager</button>
+                <div class="content">
+                    <p>Der er 468 deltagere fra det danske kontingent fordelt på 13 troppe, hvor en af dem er færøsk. Deltagerne er i aldersgruppen 14-17 år. Det er forresten jer. I er grunden til at lejren kan forløbe.</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i> Leder</button>
+                <div class="content">
+                    <p>Der er i alt 52 ledere, som leder de forskellige troppe i grupper af fire. Lederne er dem i rejser rundt med og som tager sig af jer undervejs.</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i> IST</button>
+                <div class="content">
+                    <p>International Service Team sørger for praktiske opgaver og aktiviteter på lejren. Der er 75 IST’er fra det danske kontingent. IST’erne ligger i deres egen lejr med andre IST’er fra hele verdenen.</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i> NHQ</button>
+                <div class="content">
+                    <p>National Head Quarter er en bod, som præsenterer det danske kontingent til resten af lejren. Der 24 med, der tager sig af NHQ. Desuden sørger de også for at det danske kontingent bliver set udadtil - Både ude og hjemme.</p>
+                </div>
+
+                <hr>
+
+                <button class="collapsible bold" onclick="toggleDrop(this)"><i class="fas fa-chevron-right"></i> JU</button>
+                <div class="content">
+					<p style="margin-bottom: 0em">Jamboree Udvalget</p>
+					<p>Dette er overhovederne i det danske kontingent. Der er 5 medlemmer af Jamboree Udvalget, som hver har deres ansvarsområde.</p>
+                    <img alt="Anne" src="images/JU/Anne.png">
+                    <img alt="Duus" src="images/JU/Duus.png">
+                    <img alt="Katrine" src="images/JU/Katrine.png">
+                    <img alt="Martin" src="images/JU/Martin.png">
+                    <img alt="Niels" src="images/JU/Niels.png">
+                </div>
+
+                <hr>
+
+                <h3>Kontingentets tema</h3>
+                <p>Når man er på Jamboree i det danske kontingent er det normalt at have et tema, der kan repræsenterer en dansk tradition, som det danske kontingents troppe navngives efter. Denne gang er temaet smørrebrød, så smut gerne ud og hæld rugbrød i alle jeres internationale venner!</p>
+
+            </div>
+
+        </div>
+
+    </body>
 </html>

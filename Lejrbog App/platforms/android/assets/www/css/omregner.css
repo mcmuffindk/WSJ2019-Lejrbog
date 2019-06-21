@@ -1,0 +1,40 @@
+#main {
+	margin: 0em 1em 1.5em 1em;
+	overflow-y: auto;
+}
+
+#main h1 {
+	text-align: center
+}
+
+#main p {
+	text-align: left;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.unit {
+	margin: auto;
+}
+
+.input {
+	margin-top: inherit;
+	margin-bottom: 1.5em;
+	margin-left: inherit;
+	margin-right: inherit;
+	float: left;
+    border: 0.2em;
+    border-style: solid;
+    border-color: #ab774f;
+	outline: none !important;
+}
+
+hr {
+	border-style: solid;
+	border-color: #AB774F;
+}
+#marginfill{
+	margin-bottom: 1em;
+}

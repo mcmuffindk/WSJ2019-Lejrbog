@@ -1,12 +1,14 @@
 body {
     margin: 0;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif" !important;
+	background-color: #f5cba2;
 }
 .icon-bar {
 	position: fixed;
-	top: 0em;
+	bottom: 0em;
     width: 100%;
-    background-color: #555;
+	z-index: 2;
+    background-color: #ab774f;
     overflow: auto;
 }
 .icon-bar a {
@@ -19,7 +21,7 @@ body {
     font-size: 2.25em;
 }
 .active {
-    background-color: #4CAF50;
+    background-color: #f37236;
 }
 .sidenav {
     height: 100%;
@@ -27,19 +29,23 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
-    background-color: #111;
+    left: 0;
+    background-color: #ab774f;
     overflow-x: hidden;
     transition: 0.5s;
 }
 .sidenav a {
-    padding: 0.32em 0.32em 0.32em 1.28em;
+    padding: 0.16em 0.32em 0.16em 1.28em;
     text-decoration: none;
-    font-size: 1.5625em;
-    color: #818181;
+    font-size: 1.5em/*1.5625em*/;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+.bold {
+	font-weight: bold;
 }
