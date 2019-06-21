@@ -8,13 +8,13 @@
 #main p {
 	text-align: center;
 }
-.content h1 {
-	width: 0em;
+#media h1 {
+	/*width: 0em;*/
 	display: inline-block;
-	margin-top: 0em;
-	margin-bottom: 0em;
+	/*margin-top: 0em;
+	margin-bottom: 0em;*/
 }
-.content h1 a {
+#media h1 a {
 	color: white;
 }
 #jamboree h1 {

@@ -1,4 +1,4 @@
-var stuff = [{"name": "", "email": "", "number": ""}];
+var stuff = [];
 
 function start(){
     if(localStorage.getItem("data") != null){
