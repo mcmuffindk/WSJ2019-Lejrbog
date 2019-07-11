@@ -23,6 +23,7 @@ buildscript {
     repositories {
         mavenCentral()
         jcenter()
+        google()
     }
 
     // Switch the Android Gradle plugin version requirement depending on the
@@ -30,7 +31,7 @@ buildscript {
     // http://tools.android.com/tech-docs/new-build-system/version-compatibility
     // and https://issues.apache.org/jira/browse/CB-8143
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
@@ -42,9 +43,10 @@ allprojects {
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.13'
-}
+/*
+task wrapper {
+    gradleVersion = '3.13'
+}*/
 
 // Configuration properties. Set these via environment variables, build-extras.gradle, or gradle.properties.
 // Refer to: http://www.gradle.org/docs/current/userguide/tutorial_this_and_that.html
@@ -134,7 +136,7 @@ cdvBuildRelease.dependsOn {
     return computeBuildTargetName(false)
 }
 
-task cdvPrintProps << {
+task cdvPrintProps {
     println('cdvCompileSdkVersion=' + cdvCompileSdkVersion)
     println('cdvBuildToolsVersion=' + cdvBuildToolsVersion)
     println('cdvVersionCode=' + cdvVersionCode)
@@ -170,6 +172,8 @@ android {
         if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion
         }
+        minSdkVersion 14    // This over here
+        targetSdkVersion 28
     }
 
     lintOptions {
@@ -245,10 +249,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
-    debugCompile project(path: "CordovaLib", configuration: "debug")
-    releaseCompile project(path: "CordovaLib", configuration: "release")
+    //debugApi project(path: "CordovaLib", configuration: "debug")
+    //releaseApi project(path: "CordovaLib", configuration: "release")
+    implementation project(':CordovaLib')
     // SUB-PROJECT DEPENDENCIES END
 }
 
