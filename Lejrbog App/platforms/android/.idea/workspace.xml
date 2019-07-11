@@ -21,8 +21,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="17" />
-    <option name="y" value="34" />
+    <option name="x" value="725" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -49,6 +49,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/../../../../../.." />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
   </component>
